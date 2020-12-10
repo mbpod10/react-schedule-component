@@ -9,21 +9,22 @@ const Calendar = () => {
   const calendar = []
 
   while (firstDay.isBefore(lastDay, "day")) {
-    calendar.push(
-      Array(366).fill(0)
-        .map(() => firstDay.add(1, "day").clone().format("MM/DD/YYYY"))
-    )
+    calendar.push(firstDay.add(1, "day").clone().format("MM-DD-YYYY"))
   }
 
-  console.log(calendar)
+  console.log(calendar.length)
 
-
+  const calendarArray = calendar.map((element, index) => {
+    return (
+      <div key={index}>
+        {element}
+      </div>
+    )
+  })
 
   return (
     <>
-      {/* <div>{firstDayOfYear.format("MM/DD/YYYY")}</div>
-      <div>{lastDayOfYear.format("MM/DD/YYYY")}</div>
-      <div>{startDay.format("MM/DD")} - {endDay.format("MM/DD")}</div> */}
+      {calendarArray}
     </>
   )
 }
