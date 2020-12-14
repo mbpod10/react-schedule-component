@@ -1,0 +1,30 @@
+.days{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.day-name{
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  flex-wrap: wrap;
+}
+
+.hours {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  text-align: left;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.weekly-header{
+  text-align: left;
+  padding-left: 20px;
+}
