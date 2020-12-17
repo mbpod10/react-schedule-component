@@ -21,10 +21,69 @@
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  /* justify-content: space-around; */
+  justify-content: center;
+  background-color: black;
+  /* border-top: 2px solid white; */
+}
+
+.header h5 {
+  margin-left: 40px;
+  margin-right: 40px;  
 }
 
 .weekly-header{
-  text-align: left;
-  padding-left: 20px;
+  color: white;
+}
+
+.month-div {
+  /* margin: 10px; */
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: black;
+}
+
+.month {
+  color: rgb(0, 183, 255);
+}
+
+.fa-arrow-alt-circle-right, .fa-arrow-alt-circle-left  {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: lightblue;
+}
+
+
+.table-sm td, .tasble-sm th {
+  padding: 5rem
+}
+
+th {
+  height: 50px;
+}
+
+.form-group {
+  background-color: black;
+  padding-bottom: 10px;
+  text-align: right;
+  margin-bottom: 0rem;
+}
+
+.form-control {
+  margin: auto;
+  /* text-align: end; */
+  width: 35%;
+  background-color: lightgrey
+}
+
+.form-control :hover {
+  background-color: lightgrey;
+}
+
+/* form {
+  float: right;
+} */
+
+.table-head {
+  background-color: darkgray;
 }
